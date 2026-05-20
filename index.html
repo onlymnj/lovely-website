@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovely 💌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <header>
+    <h1>For Lovely 💖</h1>
+    <p>A collection of letters from people who love you.</p>
+  </header>
+
+  <main class="container">
+
+    <div class="card" onclick="openLetter('letter1')">
+      <h2>💌 From Friends</h2>
+      <p>Click to open</p>
+    </div>
+
+    <div class="card" onclick="openLetter('letter2')">
+      <h2>✨ Special Memory</h2>
+      <p>Click to open</p>
+    </div>
+
+    <div class="card" onclick="openLetter('letter3')">
+      <h2>🌸 Your Smile</h2>
+      <p>Click to open</p>
+    </div>
+
+  </main>
+
+  <!-- POPUP LETTER -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close" onclick="closeLetter()">&times;</span>
+
+      <div id="letter1" class="letter hidden">
+        <h2>💌 From Your Friends</h2>
+        <p>
+          Dear Lovely,
+          <br><br>
+          Thank you for always being kind and comforting to everyone around you.
+          We appreciate you more than words can explain.
+        </p>
+      </div>
+
+      <div id="letter2" class="letter hidden">
+        <h2>✨ A Special Memory</h2>
+        <p>
+          Remember that one late-night conversation where we laughed for hours?
+          That moment still feels warm in my heart.
+        </p>
+      </div>
+
+      <div id="letter3" class="letter hidden">
+        <h2>🌸 Your Smile</h2>
+        <p>
+          Your smile genuinely brightens people's days.
+          Never forget how loved you are.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

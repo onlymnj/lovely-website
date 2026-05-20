@@ -1,0 +1,14 @@
+function openLetter(letterId) {
+  document.getElementById('popup').classList.remove('hidden');
+
+  const letters = document.querySelectorAll('.letter');
+  letters.forEach(letter => {
+    letter.classList.add('hidden');
+  });
+
+  document.getElementById(letterId).classList.remove('hidden');
+}
+
+function closeLetter() {
+  document.getElementById('popup').classList.add('hidden');
+}
